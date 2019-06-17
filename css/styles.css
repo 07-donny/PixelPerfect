@@ -1,0 +1,198 @@
+/*  ___                        
+   /   \___  _ __  _ __  _   _ 
+  / /\ / _ \| '_ \| '_ \| | | |
+ / /_// (_) | | | | | | | |_| |
+/___,' \___/|_| |_|_| |_|\__, |
+                         |___/ */
+
+a,
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+legend {
+    /* Font */
+    font-family: 'Play', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #333333, #505153, #6e7276, #8d9499, #acb9bd, #adc1c5, #afcacd, #b0d2d3, #92bfc1, #73adae, #539a9d, #2d888b);
+    padding: 0;
+    margin: 0;
+}
+
+/*Custom Scrollbalk*/
+::-webkit-scrollbar {
+    /* width */
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    /* Track */
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb {
+    /* Handle */
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* Handle on hover */
+    background: #555;
+}
+
+
+.imgcontainer {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    line-height: 0;
+}
+
+.topnav {
+    background-image: radial-gradient(circle, #333333, #333333, #333333, #333333, #333333, #2f2f2f, #2c2c2c, #282828, #202020, #181818, #0e0e0e, #000000);
+    overflow: hidden;
+    z-index: 0;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: grey;
+    color: white;
+}
+
+/* main text columns */
+.column-layout {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.maintext {
+    max-width: 100%;
+    display: flex;
+}
+
+ul,
+ol {
+    text-align: left;
+}
+
+/*Links in de sidebox*/
+.sidebox a:link,
+.sidebox a:visited,
+.sidebox a:active,
+.sidebox a:hover {
+    text-decoration: none;
+    background-color: #333;
+    border: 1px solid black;
+}
+
+/* unvisited link */
+.sidebox a:link {
+    color: red;
+}
+
+/* visited link */
+.sidebox a:visited {
+    color: royalblue;
+}
+
+/* selected link */
+.sidebox a:active {
+    color: green;
+}
+
+/* mouse over link */
+.sidebox a:hover {
+    color: yellow;
+}
+
+.sidebox h4,
+h3,
+h2,
+h1 {
+    background-color: #333;
+    border: 1px solid black;
+    color: white;
+}
+
+.sidebox b {
+    background-color: #333;
+    border: 1px solid black;
+    color: green;
+}
+
+.sidebox ul {
+    list-style-type: circle;
+}
+
+.sidebox ol {
+    background-image: linear-gradient(to left bottom, #333333, #3a393c, #413e45, #4a434e, #544856, #544856, #544856, #544856, #4a434e, #413e45, #3a393c, #333333);
+    border: 1px solid black;
+    color: white;
+}
+
+.sidebox p {
+    padding-left: 10px;
+}
+
+/*Linkerbox*/
+.sidebox:nth-child(1) {
+    flex: 2;
+    order: 1;
+    background-image: linear-gradient(to right, #2f4f4f, #445a60, #5b666d, #707277, #808080);
+    border: 1px solid;
+    z-index: 2;
+    box-shadow: 5px 6px 5px 1px rgba(0, 0, 0, 0.42);
+}
+
+/*Middelbox*/
+.sidebox:nth-child(2) {
+    flex: 6;
+    order: 2;
+    text-align: center;
+    background-color: ;
+    padding: 0 1% 0 1%;
+}
+
+/*Rechterbox*/
+.sidebox:nth-child(3) {
+    flex: 1;
+    order: 3;
+    text-align: center;
+    background-image: linear-gradient(to left, #2f4f4f, #445a60, #5b666d, #707277, #808080);
+    border: 1px solid;
+    box-shadow: -5px 6px 5px 1px rgba(0, 0, 0, 0.42);
+}
+
+
+footer {
+    border: 1px solid black;
+    background-image: radial-gradient(circle, #333333, #333333, #333333, #333333, #333333, #2f2f2f, #2c2c2c, #282828, #202020, #181818, #0e0e0e, #000000);
+    text-align: center;
+    color: antiquewhite;
+    box-shadow: 0px -1px 5px 1px rgba(0, 0, 0, 0.42);
+}
+
+.rating > label {
+    float: left;
+}
